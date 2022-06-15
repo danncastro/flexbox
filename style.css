@@ -1,7 +1,29 @@
+/********************************** BANNER INICIAL ************************************/
+
 *{
-    margin: 0;
+    margin: 2px;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    background-color: #3e73d4;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+}
+
+header .menu{
+    justify-content: space-between;
+}
+
+.flex-container{
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    width: 100%;
+    min-width: 260px;
 }
 
 ul{
@@ -14,43 +36,19 @@ ul li a{
     text-decoration: none;
 }
 
-div img{
-    display: block;
-    width: 100%;
-}
-
-.flex-container{
-    display: flex;
-    max-width: 992px;
-    margin: auto;
-    width: 100%;
-    min-width: 320px;
-}
-
-header{
-    background-color: #122A57;
-    height: 100px;
-    display: flex;
-    align-items: center;
+.menu-itens li a{
     color: #FFF;
 }
 
-header .list-items{
+header .menu-itens{
     display: flex;
     width: 100%;
-    max-width: 260px;
+    max-width: 450px;
     justify-content: space-between;
     align-items: center;
 }
 
-.list-items li a{
-    color: #FFF;
-}
-
-header .menu{
-    justify-content: space-between;
-}
-
+/********************************** BANNER APRESENTAÇÃO ********************************/
 .apresentacao{
     height: 100vh;
     align-items: center;
@@ -63,23 +61,25 @@ header .menu{
 
 .texto-apresentacao h1{
     color: #122A57;
-    font-size: 48px;
-    margin-bottom: 10px;
+    font-size: 45px;
+    margin-bottom: 20px;
 }
 
 .btn{
-    background-color: #122A57;
+    background-color: #3e73d4;
     color: #FFF;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 40px;
     width: 220px;
     display: block;
     text-decoration: none;
     height: 50px;
     line-height: 50px;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-bottom: 10px;
 }
+
+/************************************* QUEM SOMOS **************************************/
 #quem-somos{
     flex-direction: row-reverse;
     align-items: center;
@@ -111,8 +111,10 @@ header .menu{
     min-width: 420px;
 }
 
+/************************************** SERVIÇOS ****************************************/
+
 .container-externo{
-    background-color: #122A57;
+    background-color: #3e73d4;
     width: 100%;
 }
 
@@ -124,7 +126,7 @@ header .menu{
 
 #servicos h2{
     color: #FFF;
-    font-size: 32px;
+    font-size: px;
     margin-bottom: 20px;
 }
 
@@ -164,6 +166,7 @@ header .menu{
     margin: auto;
 }
 
+/**************************************** PLANOS **************************************/
 #planos{
     flex-direction: column;
     min-height: 100vh;
@@ -232,6 +235,7 @@ header .menu{
     margin-right: 5px;
 }
 
+/******************************************* RODA PÉ **************************************/
 footer{
     background-color: #122A57;
     height: 70px;
@@ -245,7 +249,7 @@ footer .footer{
 }
 
 
-/* mobile */
+/************************************** RESPONSIVIDADE MOBILE ****************************/
 @media(max-width: 992px){
     .flex-container{
         flex-direction: column;
